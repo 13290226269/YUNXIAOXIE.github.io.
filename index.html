@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Lab 3-1 Starting Point</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Swipe between maps</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- Mapbox JS API !-->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+  <!-- Mapbox Swipe API !-->
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" type="text/css">
+</head>
+
+<body>
+  <div id="map"></div>
+  <div class="layer-control">
+    <h1>Layer Control</h1>
+    <input type="checkbox" id="layer2015" checked>
+    <label for="layer2015">2015</label><br>
+    <input type="checkbox" id="layer2019" checked>
+    <label for="layer2019">2019</label><br>
+    <input type="checkbox" id="layer2022" checked>
+    <label for="layer2022">2022</label>
+  </div>
+  <div class="legend">
+    <h3>Legend</h3>
+    <div><i style="background: #FF0000;"></i>2015</div>
+    <div><i style="background: #00FF00;"></i>2019</div>
+    <div><i style="background: #0000FF;"></i>2022</div>
+  </div>
+  <div class="search-container">
+    <input type="text" placeholder="Search...">
+  </div>
+  <div class="zoom-controls">
+    <button id="zoom-in">+</button>
+    <button id="zoom-out">-</button>
+  </div>
+  <div class="location-control">
+    <img src="https://raw.githubusercontent.com/YangHGit/mapshp.github.io/main/location.png" alt="Location">
+  </div>
+  <div class="scale-bar" id="scale-bar"></div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
